@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prashant Palikhe</title>
+    <style>
+        /*!
+         * ress.css • v1.2.2
+         * MIT License
+         * github.com/filipelinhares/ress
+         */
+        html{box-sizing:border-box;overflow-y:scroll;-webkit-text-size-adjust:100%}*,:after,:before{background-repeat:no-repeat;box-sizing:inherit}:after,:before{text-decoration:inherit;vertical-align:inherit}*{padding:0;margin:0}audio:not([controls]){display:none;height:0}hr{overflow:visible}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}summary{display:list-item}small{font-size:80%}[hidden],template{display:none}abbr[title]{border-bottom:1px dotted;text-decoration:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}code,kbd,pre,samp{font-family:monospace,monospace}b,strong{font-weight:bolder}dfn{font-style:italic}mark{background-color:#ff0;color:#000}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}input{border-radius:0}[role=button],[type=button],[type=reset],[type=submit],button{cursor:pointer}[disabled]{cursor:default}[type=number]{width:auto}[type=search]{-webkit-appearance:textfield}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}textarea{overflow:auto;resize:vertical}button,input,optgroup,select,textarea{font:inherit}optgroup{font-weight:700}button{overflow:visible}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:0;padding:0}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button:-moz-focusring{outline:1px dotted ButtonText}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}button,select{text-transform:none}button,input,select,textarea{background-color:transparent;border-style:none;color:inherit}select{-moz-appearance:none;-webkit-appearance:none}select::-ms-expand{display:none}select::-ms-value{color:currentColor}legend{border:0;color:inherit;display:table;max-width:100%;white-space:normal}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}img{border-style:none}progress{vertical-align:baseline}svg:not(:root){overflow:hidden}audio,canvas,progress,video{display:inline-block}@media screen{[hidden~=screen]{display:inherit}[hidden~=screen]:not(:active):not(:focus):not(:target){position:absolute!important;clip:rect(0 0 0 0)!important}}[aria-busy=true]{cursor:progress}[aria-controls]{cursor:pointer}[aria-disabled]{cursor:default}::-moz-selection{background-color:#b3d4fc;color:#000;text-shadow:none}::selection{background-color:#b3d4fc;color:#000;text-shadow:none}
+
+        body {
+            font-family: 'Lato', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            color: #fff;
+        }
+
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 100;
+            src: local('Lato Hairline'), local('Lato-Hairline'), url(https://fonts.gstatic.com/s/lato/v13/ifRS04pY1nJBsu8-cUFUS-vvDin1pK8aKteLpeZ5c0A.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100vw;
+            height: 100vh;
+            text-align: center;
+            /*background-size: 300% 300%;*/
+            /*animation: shizzle 10s ease infinite;*/
+        }
+
+        main:before {
+            display: block;
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 300vh;
+            width: 100vw;
+            background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+            z-index: -1;
+            transform: translate3d(0, 0, 0);
+            animation: shizzle 60s linear infinite;
+        }
+
+        main * + * {
+            margin-top: 10px;
+        }
+
+        @keyframes shizzle {
+            100%{transform: translate3d(0, calc(100vh - 100%), 0);}
+        }
+
+        .img {
+            border: 1px solid white;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        h1 {
+            font-size: 48px;
+            line-height: 50px;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <picture>
+            <source srcset="/img/prashant_palikhe_profile_picture-2x.webp 2x, /img/prashant_palikhe_profile_picture.webp 1x" type="image/webp">
+            <source srcset="/img/prashant_palikhe_profile_picture-2x.jpg 2x, /img/prashant_palikhe_profile_picture.jpg 1x" type="image/jpeg">
+            <img class="img" src="./img/prashant_palikhe_profile_picture.jpg" alt="Prashant Palikhe profile picture">
+        </picture>
+
+        <h1>
+            Prashant Palikhe
+        </h1>
+    </main>
+</body>
+</html>
